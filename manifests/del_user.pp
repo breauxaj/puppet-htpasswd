@@ -4,7 +4,7 @@ define htpasswd::del_user (
   $cmd = $::operatingsystem ? {
     /(?i-mx:centos|fedora|redhat|scientific)/ => 'htpasswd',
   }
-  
+
   file { $filename:
     ensure => present,
   }

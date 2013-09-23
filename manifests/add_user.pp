@@ -10,7 +10,7 @@ define htpasswd::add_user (
   file { $filename:
     ensure => present,
   }
-  
+
   case $encryption {
     'md5':   { $enc = '-bm' }
     'crypt': { $enc = '-bd' }
