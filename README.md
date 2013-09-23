@@ -11,6 +11,7 @@ include htpasswd
 ```
 Usage
 -----
+```
 	htpasswd [-cmdpsD] passwordfile username
 	htpasswd -b[cmdpsD] passwordfile username password
 
@@ -26,3 +27,4 @@ Usage
  -D  Delete the specified user.
 On Windows, NetWare and TPF systems the '-m' flag is used by default.
 On all other systems, the '-p' flag will probably not work.
+```
