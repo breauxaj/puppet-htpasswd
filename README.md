@@ -30,3 +30,11 @@ htpasswd -nb[mdps] username password
 On Windows, NetWare and TPF systems the '-m' flag is used by default.
 On all other systems, the '-p' flag will probably not work.
 ```
+
+License
+-------
+GPL3
+
+Contact
+-------
+breauxaj AT gmail DOT com
