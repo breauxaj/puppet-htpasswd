@@ -1,4 +1,10 @@
 class htpasswd {
-  Class['htpasswd']->Class['apache']
+  file { '/usr/bin/htpasswd':
+    ensure  => present,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0755',
+    require => Package['httpd'],
+  }
 
 }
